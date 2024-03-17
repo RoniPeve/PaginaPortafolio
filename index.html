@@ -30,8 +30,8 @@
             </div>
             <div class="redes">
                 <ul>
-                    <li><a href="https://github.com"><i class="fab fa-github"></i></a></li>
-                    <li><a href="https://facebook.com"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="https://github.com/RoniPeve"><i class="fab fa-github"></i></a></li>
+                    <li><a href="https://www.facebook.com/adrian.pevecarhuayo/"><i class="fab fa-facebook"></i></a></li>
                     <li><a href="https://twitter.com"><i class="fab fa-twitter"></i></a></li>
                     <li><a href="https://youtube.com"><i class="fab fa-youtube"></i></a></li>
                 </ul>
@@ -48,16 +48,19 @@
                 <h2>Experiencia</h2>
                 <div class="exp">
                     <div class="anio">
-                        2022 - Presente
+                        2022 - 2024
                     </div>
                     <div class="contenido_experiencia">
-                        <h3>Practicante pre profesional</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo, nisi est, ab sequi sed voluptate eos iste culpa, possimus provident mollitia quaerat. Quibusdam reprehenderit totam vitae harum accusamus culpa nostrum expedita molestiae illum mollitia ipsa excepturi eaque, soluta magni recusandae repudiandae doloribus alias nam debitis fugiat deleniti repellendus laborum saepe.</p>
+                        <h3>Practicante profesional - Centro Nacional de planeamiento estratégico</h3>
+                        <p>Las principales actividades que desempeñé fueron el mantenimiento y la actualización de la plataforma de información territorial, la elaboración de mapas geográficos con un sistema de información geográfica QGIS, y la implementación de una plataforma de e-learning basada en el LMS Moodle. Durante este proceso, realicé modificaciones a nivel de código utilizando PHP para ajustar la plataforma a los requisitos de la entidad.</p>
                         <div class="etiquetas">
                             <ul>
-                                <li>Soporte técnico</li>
-                                <li>HTML</li>
+                                <li>QGIS</li>
+                                <li>BOOTSTRAP</li>
                                 <li>CSS</li>
+                                <li>HTML</li>
+                                <li>Angular</li>
+                                <li>PHP</li>
                             </ul>
                         </div>
                     </div>
@@ -67,8 +70,8 @@
                         2021 - 2022
                     </div>
                     <div class="contenido_experiencia">
-                        <h3>Practicante pre profesional</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo, nisi est, ab sequi sed voluptate eos iste culpa, possimus provident mollitia quaerat. Quibusdam reprehenderit totam vitae harum accusamus culpa nostrum expedita molestiae illum mollitia ipsa excepturi eaque, soluta magni recusandae repudiandae doloribus alias nam debitis fugiat deleniti repellendus laborum saepe.</p>
+                        <h3>Practicante pre profesional - Hospital Regional de Ica</h3>
+                        <p>Las principales actividades que realicé fueron el mantenimiento de los equipos informáticos y el desarrollo, así como el mantenimiento de la página institucional del hospital.</p>
                         <div class="etiquetas">
                             <ul>
                                 <li>Soporte técnico</li>
@@ -101,7 +104,7 @@
                 <h2>Proyectos - Videojuegos</h2>
                     <div class="projec" onclick="window.location.href='https://store.steampowered.com/app/1854580/In_The_Space__Escape_Room/';">
                         <div class="imagen">
-                            <img src="img/proyectos.jpg" alt="">
+                            <img src="img/in_the_space.jpg" alt="">
                         </div>
                         <div class="parrafo">
                             <h3>In the Space - Escape room</h3>
@@ -115,12 +118,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="projec" onclick="window.location.href='https://store.steampowered.com/app/1854580/In_The_Space__Escape_Room/';">
+                    <div class="projec" onclick="window.location.href='https://store.steampowered.com/app/2238410/The_kidnapped_Escape_Room/';">
                         <div class="imagen">
-                            <img src="img/proyectos.jpg" alt="">
+                            <img src="img/The_kidnapped.jpg" alt="">
                         </div>
                         <div class="parrafo">
-                            <h3>In the Space - Escape room</h3>
+                            <h3>The kidnapped: Escape room</h3>
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti veniam esse et obcaecati, aperiam exercitationem ipsam rerum, cumque ducimus sunt, maxime iste reiciendis vel. Consequuntur adipisci dolores quaerat ut eum!</p>
                             <div class="etiquetas">
                                 <ul>
@@ -131,12 +134,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="projec" onclick="window.location.href='https://store.steampowered.com/app/1854580/In_The_Space__Escape_Room/';">
+                    <div class="projec" onclick="window.location.href='https://github.com/RoniPeve/ProyectoBiblioteca';">
                         <div class="imagen">
-                            <img src="img/proyectos.jpg" alt="">
+                            <img src="img/bibioteca.png" alt="">
                         </div>
                         <div class="parrafo">
-                            <h3>In the Space - Escape room</h3>
+                            <h3>Sistema Bibliotecario</h3>
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti veniam esse et obcaecati, aperiam exercitationem ipsam rerum, cumque ducimus sunt, maxime iste reiciendis vel. Consequuntur adipisci dolores quaerat ut eum!</p>
                             <div class="etiquetas">
                                 <ul>
@@ -155,43 +158,71 @@
 <script>
    document.addEventListener("DOMContentLoaded", function() {
     const menuItems = document.querySelectorAll(".menu a");
+    const cuerpo = document.querySelector(".cuerpo");
+
     // Añadir la clase 'selected' al elemento "Acerca de" al cargar la página
     menuItems[0].parentNode.classList.add("selected");
-    menuItems.forEach(function(item) {
-        item.addEventListener("click", function(event) {
-            event.preventDefault();
 
-            // Mantener la clase hover si el usuario hace clic en un elemento
-            if (!this.parentNode.classList.contains("selected")) {
-                menuItems.forEach(function(menuItem) {
-                    menuItem.parentNode.classList.remove("selected");
-                });
+    // Función para determinar qué sección está visible en la vista
+    function getCurrentSection() {
+        const scrollPosition = cuerpo.scrollTop;
+        let currentSectionId = "";
 
-                this.parentNode.classList.add("selected");
+        // Iterar sobre todas las secciones y encontrar la que está en la parte superior de la vista
+        document.querySelectorAll(".cuerpo > div").forEach(function(section) {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+
+            if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                currentSectionId = section.id;
             }
-
-            const targetId = this.getAttribute("href").substring(1);
-            const targetElement = document.getElementById(targetId);
-            targetElement.scrollIntoView({ behavior: "smooth" });
         });
-    });
-});
-/*
-document.addEventListener('DOMContentLoaded', function() {
-    var linterna = document.getElementById('linterna');
 
-    document.addEventListener('mousemove', function(event) {
-        var x = event.pageX;
-        var y = event.pageY;
-        linterna.style.display = 'block';
-        linterna.style.setProperty('--linterna-x', x + 'px'); // Actualiza la posición x de la linterna
-        linterna.style.setProperty('--linterna-y', y + 'px'); // Actualiza la posición y de la linterna
+        return currentSectionId;
+    }
+
+    // Función para resaltar automáticamente el elemento del menú según la sección visible
+    function highlightMenuItem() {
+        const currentSectionId = getCurrentSection();
+
+        menuItems.forEach(function(item) {
+            const href = item.getAttribute("href").substring(1);
+            const menuItemParent = item.parentNode;
+
+            if (href === currentSectionId) {
+                menuItemParent.classList.add("selected");
+            } else {
+                menuItemParent.classList.remove("selected");
+            }
+        });
+    }
+
+    // Función para desplazarse suavemente al hacer clic en un elemento del menú
+    function smoothScroll(event) {
+        event.preventDefault();
+
+        // Mantener la clase hover si el usuario hace clic en un elemento
+        if (!this.parentNode.classList.contains("selected")) {
+            menuItems.forEach(function(menuItem) {
+                menuItem.parentNode.classList.remove("selected");
+            });
+
+            this.parentNode.classList.add("selected");
+        }
+
+        const targetId = this.getAttribute("href").substring(1);
+        const targetElement = document.getElementById(targetId);
+        targetElement.scrollIntoView({ behavior: "smooth" });
+    }
+
+    // Escuchar eventos de clic en los elementos del menú
+    menuItems.forEach(function(item) {
+        item.addEventListener("click", smoothScroll);
     });
 
-    document.addEventListener('mouseleave', function() {
-        linterna.style.display = 'none';
-    });
+    // Escuchar el evento de desplazamiento en el div de cuerpo
+    cuerpo.addEventListener("scroll", highlightMenuItem);
 });
-*/
+
     </script>
 </html>

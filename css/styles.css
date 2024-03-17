@@ -215,6 +215,8 @@ h1 {
 }
 .imagen img{
     width: 130px;
+    border: 2px solid #172649; 
+    border-radius: 5px;
 }
 .parrafo {
     flex: 1; /* Se expandirá para llenar el espacio restante */
@@ -228,19 +230,7 @@ h1 {
     border-radius: 10px;
     cursor: pointer; /* Cambia el cursor a una mano */
 }
-/**********************/
-/*
-#linterna {
-    position: fixed;
-    width: 500px; 
-    height: 500px; 
-    border-radius: 50%; 
-    pointer-events: none;
-    background: radial-gradient(circle, rgba(27, 46, 99, 0.7), rgba(27, 46, 99, 0.4), transparent); 
-    display: none;
-    z-index: 9999;
-    top: calc(var(--linterna-y) - 250px); 
-    left: calc(var(--linterna-x) - 250px); 
-    box-shadow: 0 0 0px rgba(27, 46, 99, 0.5), 0 0 200px rgba(27, 46, 99, 0.3), 0 0 400px rgba(27, 46, 99, 0.1); 
+.projec:hover .imagen img {
+    border-color: #344d88; /* Cambia el color del borde al pasar el cursor */
 }
-*/
+
