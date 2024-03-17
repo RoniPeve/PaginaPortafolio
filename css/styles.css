@@ -1,0 +1,246 @@
+:root {
+    --color-titulo: rgb(226 232 240);
+    --color-fondo: #0F172A;
+    /* Define más variables de color si lo necesitas */
+    --color-texto: rgb(148 163 184);
+    --linterna-x: 50vw; /* Inicialmente en el centro horizontal de la ventana */
+    --linterna-y: 50vh; /* Inicialmente en el centro vertical de la ventana */
+}
+body {
+    margin: 0; /* Elimina el margen predeterminado */
+    padding: 0; /* Elimina el padding predeterminado */
+    background-color: var(--color-fondo);
+    overflow: hidden; /* Oculta el scroll del body */
+    color: var(--color-texto);
+}
+.main .principal {
+    margin: 20px auto; /* Ajusta el margen superior e inferior a 50px y centra horizontalmente */
+}
+.perfil {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    width: 200px; /* Ancho del contenedor perfil */
+    height: 200px; /* Alto del contenedor perfil */
+    border-radius: 50%; /* Hace que el contenedor tenga esquinas redondeadas para formar un círculo */
+    overflow: hidden; /* Oculta cualquier contenido que se salga del contenedor */
+    margin: 0 auto; /* Centra horizontalmente */
+}
+
+.perfil img {
+    width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+    height: auto; /* Ajusta la altura automáticamente */
+    border-radius: 50%; /* Hace que la imagen tenga esquinas redondeadas para formar un círculo */
+}
+
+h1 {
+    color: var(--color-titulo);
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    margin-top:10px;
+}
+.principal h2{
+    margin: 0;
+    font-size: 18px;
+}
+.principal{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    width: 80%;
+    line-height: 1.5;
+}
+.principal p{
+    color: #ccc;
+    width: 70%;
+
+}
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Divide el main en dos columnas */
+    gap: 20px; /* Espacio entre las columnas */
+    height: 100vh; /* Establece la altura al 100% del viewport */
+    overflow-y: hidden; /* Oculta el scroll del viewport principal */
+}
+
+.menu li {
+    position: relative;
+    list-style: none;
+    padding-left: 70px;
+    transition: padding-left 0.3s ease;
+    margin-top: 15px
+}
+.menu li a{
+    text-decoration: none;
+    color: #888383;
+    font-weight: 300;
+    font-size: 14px;
+}
+.menu li::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background-color: #888383;
+    transition: width 0.3s ease, background-color 0.3s ease;
+    transform: translateY(-50%);
+}
+
+.menu li.selected::before,
+.menu li:hover::before {
+    width: 80px;
+    background-color: #fff;
+}
+
+.menu li.selected a,
+.menu li:hover a {
+    color: #fff;
+    font-weight: 600;
+}
+
+.menu li.selected,
+.menu li:hover {
+    padding-left: 90px;
+}
+
+
+.principal {
+    /* Estilos para la primera columna */
+    overflow: hidden; /* Oculta el scroll */
+}
+
+.cuerpo {
+    /* Estilos para la segunda columna */
+    overflow-y: auto; /* Añade scroll vertical solo al div cuerpo */
+    height: 100%; /* Ajusta la altura al 100% del contenedor */
+}
+
+/*REDES*************/
+.redes ul {
+    list-style-type: none; /* Elimina los estilos de lista */
+    padding: 0;
+    margin: 0;
+}
+
+.redes ul li {
+    display: inline-block; /* Hace que los elementos de la lista se muestren en línea */
+    margin-right: 10px; /* Espaciado entre los íconos */
+}
+
+.redes ul li a {
+    color: inherit; /* Hereda el color del texto */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    font-size: 24px; /* Tamaño del ícono */
+}
+
+.redes ul li a:hover {
+    color: #fff; /* Cambia el color al pasar el cursor sobre el ícono */
+}
+.acerca{
+    width: 80%;
+    font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding: 30px 0px;
+  line-height: 1.5;
+}
+/*******expriencia ****/
+
+.exp {
+    display: flex;
+}
+
+.anio {
+    flex: none; /* No se expandirá */
+    width: 30%; /* Ancho del 30% */
+}
+
+.contenido_experiencia {
+    flex: 1; /* Se expandirá para llenar el espacio restante */
+    width: 60%; /* Ancho del 70% */
+}
+.experiencia{
+    width: 80%;
+    font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding: 30px 0px;
+  line-height: 1.5;
+}
+.experiencia p{
+    font-size: 14px;
+}
+.contenido_experiencia h3 {
+    margin-top: 0; /* Elimina el margen superior por defecto */
+}
+.etiquetas ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.etiquetas li {
+    background-color: #122B3A;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin-right: 10px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    display: inline-block; /* Mostrar elementos en línea */
+    white-space: nowrap; /* Asegurar que el texto esté en una sola línea */
+}
+
+.proyectos{
+    width: 80%;
+    font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding: 30px 0px;
+  line-height: 1.5;
+}
+.proyectos p{
+    font-size: 14px;
+}
+.projec {
+    display: flex;
+    padding: 20px;
+}
+
+.projec .imagen {
+
+    width: 30%; /* Ancho del 30% */
+}
+.imagen img{
+    width: 130px;
+}
+.parrafo {
+    flex: 1; /* Se expandirá para llenar el espacio restante */
+    width: 60%; /* Ancho del 70% */
+}
+.parrafo h3 {
+    margin-top: 0; /* Elimina el margen superior por defecto */
+}
+.projec:hover {
+    background-color: #172649; /* Cambia el color de fondo al pasar el cursor */
+    border-radius: 10px;
+    cursor: pointer; /* Cambia el cursor a una mano */
+}
+/**********************/
+/*
+#linterna {
+    position: fixed;
+    width: 500px; 
+    height: 500px; 
+    border-radius: 50%; 
+    pointer-events: none;
+    background: radial-gradient(circle, rgba(27, 46, 99, 0.7), rgba(27, 46, 99, 0.4), transparent); 
+    display: none;
+    z-index: 9999;
+    top: calc(var(--linterna-y) - 250px); 
+    left: calc(var(--linterna-x) - 250px); 
+    box-shadow: 0 0 0px rgba(27, 46, 99, 0.5), 0 0 200px rgba(27, 46, 99, 0.3), 0 0 400px rgba(27, 46, 99, 0.1); 
+}
+*/
